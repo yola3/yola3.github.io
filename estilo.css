@@ -36,6 +36,8 @@ body {
     cursor: default;
     transition: all 400ms ease;
 }
+
+
 .card:hover{
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
     transform: translateY(-3%);
@@ -44,14 +46,6 @@ body {
 .card .contenido{
     text-align: center;
 }
-
-
-
-
-
-
-
-
 
 
 
