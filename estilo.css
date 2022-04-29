@@ -7,9 +7,12 @@ body{
     background-position: center;
     font-family: sans-serif;
 }
-
-
-
+.letras_titulo{
+    font-family: 'DM Serif Display', serif;
+}
+.texto{
+    font-family: 'Outfit', sans-serif;
+}
 
 li:hover {
     background-color: #77d5f1;
@@ -59,7 +62,7 @@ body {
 /*:::::Pie de Pagina*/
 .pie-pagina{
     width: 100%;
-    background-color: #0a141d;
+    background-color: #00325f;
 }
 .pie-pagina .grupo-1{
     width: 100%;
@@ -121,3 +124,7 @@ body {
         padding: 35px 0px;
     }
 }
+
+.justificado{
+    text-align: justify;
+    }
