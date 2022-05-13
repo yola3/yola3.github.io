@@ -16,13 +16,18 @@
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap" rel="stylesheet">
+    <title>
+        Modularización
+    </title>
+    <link rel="shortcut icon" href="imagenes/cubo.png">
 </head>
 <body>
     
     <!-- inicio de navbar -->
     <nav class="navbar navbar-expand-lg navbar-light   fixed-top" style="background-color:#00325f ;" >
         <div class="container ">
-            <a class="navbar-brand fw-bold text-white" href="Inicio.html">Lenguaje de interfaz</a>
+            <img src="imagenes/tecilia.png" alt="" width="50" height="40">
+            <a class="navbar-brand fw-bold text-white mx-2 texnav fs-5" href="Inicio.html">Lenguaje de interfaz</a>
             <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -30,17 +35,17 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-auto text-center mb-2 mb-lg-0 fw-bold">
                     <li class="nav-item ">
-                        <a class="nav-link  text-white " aria-current="page" href="Inicio.html">Introducción</a>
+                        <a class="nav-link  text-white texnav fs-5" aria-current="page" href="Inicio.html">Introducción</a>
                     </li>
                     <li class="nav-item ">
-                        <a class="nav-link text-white" href="conceptos.html">Conceptos</a>
+                        <a class="nav-link text-white texnav fs-5" href="conceptos.html">Conceptos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white" href="Programacion.html">Programación básica</a>
+                        <a class="nav-link text-white texnav fs-5" href="Programacion.html">Programación básica</a>
 
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active text-white" href="Modularizacion.html">Modularización</a>
+                        <a class="nav-link active text-white texnav fs-5" href="Modularizacion.html">Modularización</a>
                         
                     </li>
                 </ul>
@@ -52,8 +57,76 @@
     <br><br><br>
     <div class="container">
         <h2 class="letras_titulo fw-bold text-center">¿Qué es la modularización?</h2>
-    </div>
+        <h4 class="texto fw-bold justificado">Es uno de los métodos de diseño más flexibles y poderosos para el mejoramiento de la productividad de un programa.</h4>
+
+         <!-- inicio de card -->
+     <div class="cont container text-center ">
+        <div class="card border-start  border-primary border-5 bg-light bg-opacity-25">
+            <figure>
+                <img src="">
+            </figure>
+            <div class="contenido container">
+                <h3 class="letras_titulo"> Procedimientos</h3>
+              
+                <p class="texto fw-bold justificado fs-5">Es una colección de instrucciones que realizan una tarea específica. Dependiendo 
+                    de su extensión y complejidad, un programa puede contener uno, algunos o 
+                    inclusive cientos de procedimientos.</p>
+                    <a class="fs-5 text-dark" href="conceptos.html "></a>
+                    <p></p>
+            </div>
+        </div>
     
+        <div class="card border-start border-primary border-5 bg-light bg-opacity-25">
+            <figure>
+                <img src="">
+            </figure>
+            <div class="contenido container ">
+                <h3 class="letras_titulo ">Macros</h3>
+                
+                <p class="texto fw-bold justificado fs-5">Una macro es un conjunto de instrucciones que pueden ser llamadas utilizando su nombre para ejecutarse dentro de un programa, estas solo se escriben una vez dentro del código y pueden utilizarse las veces que sea necesario.</p>
+                    <a class="fs-5 text-dark" href="Programacion.html"></a>
+                  
+            </div>
+        </div>
+    </div>
+</div>
+ <!-- fin de card -->
+ <div class="container">
+    <h2 class="letras_titulo fw-bold ">Código en leguaje ensamblador de procedimientos y macros.</h2>
+    <div class="cont container text-center">
+        <div class="card bg-light border-top border-3 border-bottom border-primary">
+            <figure>
+                <img src="">
+            </figure>
+            <div class="contenido container">
+                <h3 class="fw-bold letras_titulo">Ejemplo de procedimientos</h3>
+                <p class="texto justificado fs-5">Este programa utiliza el procedimiento, para invocarlo se utiliza la instruccion CALL que guarda en la pila el valor actual del registro. El siguiente ejemplo de procedimientos nos pide dos numeros y lo devuelve diciendo el valor que tiene los numeros insertados</p>
+                <script src="https://gist.github.com/yola3/10ea2c73d0d5a5132610b657502983bc.js"></script>
+    
+            </div>
+        </div>
+    </div>
+    <!-- final de card -->
+</div>
+
+ <!-- fin de card -->
+ <div class="container">
+    <div class="cont container text-center">
+        <div class="card bg-light border-top border-3 border-bottom border-primary">
+            <figure>
+                <img src="">
+            </figure>
+            <div class="contenido container">
+                <h3 class="fw-bold letras_titulo">Ejemplo de macros</h3>
+                <p class="texto justificado fs-5">Es necesario definir un nombre  específico para la macro, junto con el conjunto de instrucciones en ensamblador que la macro va a generar. Después, siempre que necesite codificar el conjunto de instrucciones, solo se codifica el nombre de la macro y el ensamblador genera de manera  automática las instrucciones que se  definió. En este caso se definió cuatro macros (limpiar, posición de la cadena, imprimir y pausar). </p>
+
+                <script src="https://gist.github.com/yola3/665029fc487ad2622c353a7f73425ba5.js"></script>
+    
+            </div>
+        </div>
+    </div>
+    <!-- final de card -->
+</div>
     <br><br><br><br>
 
 
@@ -68,15 +141,15 @@
             </figure>
         </div>
         <div class="box">
-            <h2>SOBRE NOSOTROS</h2>
-            <p>"Si queremos contar lÍneas de código, no deberíamos referirnos a ellas como líneas producidas, sino como líneas consumidas" (Edsger Dijkastra).</p>
-            <p>Alumna: Yolanda Galindo Martinez</p>
-            <p>Alumno: Jalil Garcia jeronimo</p>
+            <h2 class="letras_titulo">DESARROLLADORES</h2>
+            <p class="texnav">"Si queremos contar línea de código, no deberíamos referirnos a ellas como líneas producidas, sino como líneas consumidas" (Edsger Dijkastra).</p>
+            <p class="texnav">Alumna: Yolanda Galindo Martinez</p>
+            <p class="texnav">Alumno: Jalil Garcia jeronimo</p>
         </div>
         <div class="box">
-            <h2>CONSULTAS</h2>
+            <h2 class="letras_titulo">CONSULTAS</h2>
             <div class="red-social">
-                <a target= "_blank" href="https://www.facebook.com/mdbootstrap/" class="fa fa-facebook"></a>
+                <a target= "_blank" href="https://www.facebook.com/extension.iliatenco" class="fa fa-facebook"></a>
                 <a target= "_blank" href="https://github.com/yola3/yola3.github.io" class="fa fa-github"></a>
                 <a target= "_blank" href=" https://goo.gl/HDngCZ" class="fa fa-youtube"></a>
             </div>
@@ -88,9 +161,6 @@
     </div>
 </footer>
 <!--:::final footer::::::-->
-
-
-
    
         
 
