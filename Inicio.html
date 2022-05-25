@@ -25,7 +25,7 @@
 
     <!-- inicio de navbar -->
     <nav class="navbar navbar-expand-lg navbar-light   fixed-top" style="background-color:#00325f ;">
-        <div class="container">
+        <div class="container ">
             <img src="imagenes/tecilia.png" alt="" width="50" height="40">
             <a class="navbar-brand fw-bold text-white texnav mx-2 fs-5" href="Inicio.html">Extensión académica Iliatenco</a>
             <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
@@ -55,8 +55,8 @@
     </nav>
     <!-- final de navbar -->
     <br><br><br>
-
-    <h2 class="display-4 text-center fw-bold text-dark my-3 letras_titulo">Lenguaje de interfaz</h2>
+    
+    <h2 class="display-4 text-center fw-bold text-dark my-3 letras_titulo">Lenguajes de interfaz</h2>
     <div class="container">
         <h4 class="texto fw-bold justificado">El lenguaje ensamblador es un tipo de lenguaje de bajo nivel utilizado
             para escribir programas informáticos, y constituye la representación más directa del código máquina
@@ -64,54 +64,56 @@
             para cada arquitectura de microprocesador.</h4>
     </div>
     <br>
-    <br>
     <section class="container my-2 ">
         <!-- carrousel -->
-        <div id="carouselExampleIndicators" class="carousel slide" data-mdb-ride="carousel">
-
-            <div class="carousel-inner">
+        <div id="carouselExampleInterval" class="carousel slide carousel-dark" data-mdb-ride="carousel">
+            <div class="carousel-inner text-dark">
                 <div class="container carousel-item active">
+    
                     <!-- inicio de card -->
                     <div class="row  row-cols-1 row-cols-md-2 g-4">
                         <div class="col-sm-6 ">
-                          <div class="card border-top border-primary border-5 text-center rounded-8">
-                            <div class="card-body ">
-                              <h3 class="card-title letras_titulo">Conceptos</h3>
-                              <p class="card-text texto fs-5 fw-bold justificado">El lenguaje ensamblador consiste en un
-                                conjunto de mnemónicos que representan instrucciones básicas para los computadores,
-                                microprocesadores, microcontroladores y otros circuitos integrados programables.</p>
-                              <a class="fs-5 text-dark "  href="conceptos.html ">Leer más...</a>
+                            <div class="card border-top border-primary border-5 text-center rounded-8">
+                                <div class="card-body ">
+                                    <h3 class="card-title letras_titulo">Conceptos</h3>
+                                    <p class="card-text texto fs-5 fw-bold justificado">El lenguaje ensamblador consiste en
+                                        un
+                                        conjunto de mnemónicos que representan instrucciones básicas para los computadores,
+                                        microprocesadores, microcontroladores y otros circuitos integrados programables.</p>
+                                    <a class="fs-5 text-dark " href="conceptos.html ">Leer más...</a>
+                                    <br>
+                                </div>
                             </div>
-                          </div>
                         </div>
                         <div class="col-sm-6">
-                          <div class="card border-top border-primary border-5 text-center rounded-8">
-                            <div class="card-body">
-                              <h3 class="card-title letras_titulo">Programación básica</h3>
-                              <p class="card-text texto fs-5 fw-bold justificado">Generalmente, un programa ensamblador moderno
-                                crea código objeto traduciendo instrucciones mnemónicas de lenguaje ensamblador en
-                                opcodes, y resolviendo los nombres simbólicos para las localizaciones de memoria y
-                                otras entidades.</p>
-                                <a class="fs-5 text-dark" href="Programacion.html">Leer más...</a>
+                            <div class="card border-top border-primary border-5 text-center rounded-8">
+                                <div class="card-body">
+                                    <h3 class="card-title letras_titulo">Programación básica</h3>
+                                    <p class="card-text texto fs-5 fw-bold justificado">Generalmente, un programa
+                                        ensamblador moderno
+                                        crea código objeto traduciendo instrucciones mnemónicas de lenguaje ensamblador en
+                                        opcodes, y resolviendo los nombres simbólicos para las localizaciones de memoria y
+                                        otras entidades.</p>
+                                    <a class="fs-5 text-dark" href="Programacion.html">Leer más...</a>
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
                     </div>
-<!-- fin de card -->
-
+                </div>
+                <!-- fin de card -->
+    
                 <div class="carousel-item ">
                     <!-- inicio de card -->
-                    <div class="cont container-fluid text-center my-3 ">
-                        <div class="card border-top border-5 border-primary border-5 rounded-8"
-                            style="margin: auto; width: 800px;">
-                            <figure>
-                                <img src="">
-                            </figure>
-                            <div class="contenido container ">
+                    <div class="cont container-fluid text-center my-2 ">
+                        <div class="card border-top border-5 border-primary border-5 rounded-8 "
+                            style="width: 30rem; margin: auto auto; ">
+    
+                            <div class="contenido container my-4 ">
                                 <h3 class="letras_titulo ">Modularización</h3>
-
-                                <p class="texto fw-bold justificado fs-5"> Básicamente es crear varias rutinas (funciones o procedimientos) y asi segmentar el código y hacerlo mas entendible para el programador ya sea para actualizaciones o depuraciones.</p>
+    
+                                <p class="card-text texto fw-bold justificado fs-5">La palabra modularización proviene de
+                                    módulo, cuya definición textual es: Elemento con función propia concebido para poder ser
+                                    agrupado de distintas maneras con otros elementos constituyendo una unidad mayor. </p>
                                 <a class="fs-5 text-dark" href="Modularizacion.html">Leer más...</a>
                                 <p></p>
                             </div>
@@ -119,20 +121,21 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="prev">
+            <button class="carousel-control-prev" data-mdb-target="#carouselExampleInterval" type="button" data-mdb-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
               </button>
-              <button class="carousel-control-next" type="button" data-mdb-target="#carouselExampleIndicators" data-mdb-slide="next">
+              <button class="carousel-control-next" data-mdb-target="#carouselExampleInterval" type="button" data-mdb-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
               </button>
-        
-    </div>
+            
+        </div>
         <!--fin carrousel -->
-   </section>
-<br>
-<br>
+    </section>
+    <br>
+
+
 
         <!--:::footer::::::-->
         <footer class="pie-pagina">
@@ -156,7 +159,7 @@
                     <div class="red-social">
                         <a target="_blank" href="https://www.facebook.com/extension.iliatenco" 
                             class="fa fa-facebook"></a>
-                        <a target="_blank" href="https://github.com/yola3/yola3.github.io" class="fa fa-github"></a>
+                        <a target="_blank" href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="fa fa-envelope"></a>
                         
                        
                         <img class="my-3" src="imagenes/LOGO_TECNM_BLANCO.png" alt="" width="300" height="100" >
@@ -164,10 +167,10 @@
                 </div>
             </div>
             <div class="grupo-2">
-                <small>&copy; 2020 Copyright: <a class="text-white" target="_blank"
-                        href="https://mdbootstrap.com/">MDBootstrap.com</a>
+                <small>&copy; Creative <a class="text-white" target="_blank"
+                        href="">Commons</Canvas></a>
             </div> </small>
-            </div>
+            
         </footer>
         <!--:::final footer::::::-->
 

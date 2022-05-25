@@ -4,10 +4,10 @@ body{
     padding: 0;
     background: url(imagenes/TecNM_Azteca.png);   
     background-size: cover;
-    background-position: center;
-    font-family: sans-serif;
+    background-position: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    font-family: sans-serif;
 }
 .letras_titulo{
     font-family: 'DM Serif Display', serif;
@@ -35,7 +35,7 @@ body {
     width: 100%;
     margin: 20px;
     border-radius: 15px;
-    overflow: hidden;
+    overflow-y: auto;
     background: #fff;
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
     cursor: default;
@@ -134,5 +134,39 @@ body {
 .texnav {
     font-family: 'Itim', cursive;
 }
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+.btn-scrolltop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 20px;
+    background: rgb(55, 131, 194);
+    color: white;
+    border: 1px solid white;
+    border-radius: 100%;
+    cursor: pointer;
+    transform: translateY(100px);
+    transition: 0.3s;
+  }
+  
+  .btn-scrolltop-on {
+    transform: translateY(0);
+  }
+
+
+
+
+
+
+
+
+
+
 
 

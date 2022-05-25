@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
   <!-- MDB -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="estilo.css">
   <!--Iconos-->
   <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
@@ -18,9 +19,10 @@
   <link rel="stylesheet" href="estilo.css">
   <title>
     Conceptos
-</title>
-<link rel="shortcut icon" href="imagenes/concepto.png">
+  </title>
+  <link rel="shortcut icon" href="imagenes/concepto.png">
 </head>
+
 <body>
 
 
@@ -48,14 +50,16 @@
           </li>
           <li class="nav-item">
             <a class="nav-link text-white texnav fs-5" href="Modularizacion.html">Modularización</a>
-            
-        </li>
+
+          </li>
         </ul>
       </div>
     </div>
   </nav>
   <!-- final de navbar -->
-  <br><br>
+  <br><br><br>
+  <h2 class="display-4 text-center fw-bold text-dark my-3 letras_titulo">Conceptos de programación básica</h2>
+
   <!-- inicio de accordion -->
   <div class="container accordion accordion-flush my-5" id="accordionFlushExample">
     <div class="accordion-item bg-light  p-2 text-dark bg-opacity-25 ">
@@ -70,7 +74,8 @@
         data-mdb-parent="#accordionFlushExample">
         <div class="accordion-body ">
 
-          <p class="texto fw-bold justificado fs-5">Como en cualquier otro lenguaje de programación, hay ocasiones en las que
+          <p class="texto fw-bold justificado fs-5">Como en cualquier otro lenguaje de programación, hay ocasiones en
+            las que
             es necesario hacer que el programa no siga una secuencia lineal, sino que repita varias veces una misma
             instrucción o bloque de instrucciones antes de continuar con el resto del programa, es para esto que se
             utilizan los ciclos.Existen 5 tipos de ciclos predefinidos en ensamblador, aunque también se pueden crear
@@ -78,33 +83,38 @@
           <h6 class="fw-bold fs-5">
             LOOP:
           </h6>
-          <p class="texto fw-bold justificado fs-5">Esta función decrementa el valor del registro contador CX, si el valor
+          <p class="texto fw-bold justificado fs-5">Esta función decrementa el valor del registro contador CX, si el
+            valor
             contenido en CX es cero ejecuta la siguiente instrucción, en caso contrario transfiere el control a la
             ubicación definida por la etiqueta utilizada al momento de declarar el ciclo.</p>
           <h6 class="fw-bold fs-5">
             LOOPE:
           </h6>
-          <P class="texto fw-bold justificado fs-5">Esta función decrementa el valor del registro contador CX, si el valor
+          <P class="texto fw-bold justificado fs-5">Esta función decrementa el valor del registro contador CX, si el
+            valor
             contenido en CX es cero y ZF es diferente de uno ejecuta la siguiente instrucción, en caso contrario
             transfiere el control a la ubicación definida por la etiqueta utilizada al momento de decla</P>
           <h6 class="fw-bold fs-5">
             LOOPNE:
           </h6>
-          <P class="texto fw-bold justificado fs-5">Esta función decrementa el valor del registro contador CX, si el valor
+          <P class="texto fw-bold justificado fs-5">Esta función decrementa el valor del registro contador CX, si el
+            valor
             contenido en CX es cero y ZF es diferente de cero ejecuta la siguiente instrucción, en caso contrario
             transfiere el control a la ubicación definida por la etiqueta utilizada al momento de declarar el ciclo,
             esta es la operación contraria a loope.</P>
           <h6 class="fw-bold fs-5">
             LOOPZ:
           </h6>
-          <P class="texto fw-bold justificado fs-5">Esta función decrementa el valor del registro contador CX, si el valor
+          <P class="texto fw-bold justificado fs-5">Esta función decrementa el valor del registro contador CX, si el
+            valor
             contenido en CX es cero y ZF es diferente de cero ejecuta la siguiente instrucción, en caso contrario
             transfiere el control a la ubicación definida por la etiqueta utilizada al momento de declarar el ciclo,
             esta es la operación contraria a loope.</P>
           <h6 class="fw-bold fs-5">
             LOOPNZ:
           </h6>
-          <P class="texto fw-bold justificado fs-5">Esta función decrementa el valor del registro contador CX, si el valor
+          <P class="texto fw-bold justificado fs-5">Esta función decrementa el valor del registro contador CX, si el
+            valor
             contenido en CX es cero y ZF es diferente de cero ejecuta la siguiente instrucción, en caso contrario
             transfiere el control a la ubicación definida por la etiqueta utilizada al momento de declarar el ciclo,
             esta es la operación contraria a loopz.</P>
@@ -122,8 +132,10 @@
       <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
         data-mdb-parent="#accordionFlushExample">
         <div class="accordion-body texto fw-bold justificado fs-5">
-          Dentro del lenguaje ensamblador no existe el tipo de dato cadena (string en otros lenguajes), por lo que para utilizarla es necesario tratar a las cadenas como un conjunto 
-          de caracteres reservados bajo el nombre de una sola variable.El lenguaje ensamblador cuenta con instrucciones que por su naturaleza sirven para el manejo de cadenas, estas son:
+          Dentro del lenguaje ensamblador no existe el tipo de dato cadena (string en otros lenguajes), por lo que para
+          utilizarla es necesario tratar a las cadenas como un conjunto
+          de caracteres reservados bajo el nombre de una sola variable.El lenguaje ensamblador cuenta con instrucciones
+          que por su naturaleza sirven para el manejo de cadenas, estas son:
           <p></p>
           <h6 class="fw-bold fs-5">
             MOVSB:
@@ -136,11 +148,13 @@
           <h6 class="fw-bold fs-5">
             LODSB:
           </h6>
-          <P class="texto fw-bold justificado fs-5">Carga en la parte baja del registro acumulador (AL) el valor de la localidad de memoria determinada por DS:SI.</P>
+          <P class="texto fw-bold justificado fs-5">Carga en la parte baja del registro acumulador (AL) el valor de la
+            localidad de memoria determinada por DS:SI.</P>
           <h6 class="fw-bold fs-5">
             LODSW:
           </h6>
-          <P class="texto fw-bold justificado fs-5">Carga en el registro acumulador (AX) el valor de la localidad de memoria determinada por DS:SI.</P>
+          <P class="texto fw-bold justificado fs-5">Carga en el registro acumulador (AX) el valor de la localidad de
+            memoria determinada por DS:SI.</P>
         </div>
       </div>
     </div>
@@ -155,17 +169,20 @@
       <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
         data-mdb-parent="#accordionFlushExample">
         <div class="accordion-body texto fw-bold justificado fs-5">
-          La comparación y prueba son instrucciones especiales con las que cuenta el microprocesador, 
+          La comparación y prueba son instrucciones especiales con las que cuenta el microprocesador,
           estas son CMP y TEST respectivamente.
           <p></p>
           <h6 class="fw-bold fs-5">
             Comparación (CMP):
           </h6>
-          <P class="texto fw-bold justificado fs-5">Esta instrucción compara los dos valores que se le den como parámetros y modifica las banderas de signo (SF), de cero (ZF) y de acarreo (CF) según sea necesario.</p>
+          <P class="texto fw-bold justificado fs-5">Esta instrucción compara los dos valores que se le den como
+            parámetros y modifica las banderas de signo (SF), de cero (ZF) y de acarreo (CF) según sea necesario.</p>
           <h6 class="fw-bold fs-5">
             Prueba (TEST):
           </h6>
-          <P class="texto fw-bold justificado fs-5">Verifica que los valores que se le introduzcan como parámetros sean iguales relizando la operación lógica AND, no almacena ningún resultado pero modifica banderas según sea necesario.</p>
+          <P class="texto fw-bold justificado fs-5">Verifica que los valores que se le introduzcan como parámetros sean
+            iguales relizando la operación lógica AND, no almacena ningún resultado pero modifica banderas según sea
+            necesario.</p>
 
         </div>
       </div>
@@ -182,33 +199,44 @@
       <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
         data-mdb-parent="#accordionFlushExample">
         <div class="accordion-body texto fw-bold justificado fs-5">
-          Los saltos son instrucciones que permiten al programador cambiar el orden de ejecución del programa según sea necesario, dentro de ensamblador existen dos tipos de salto principales: condicionales e incondicionales.
+          Los saltos son instrucciones que permiten al programador cambiar el orden de ejecución del programa según sea
+          necesario, dentro de ensamblador existen dos tipos de salto principales: condicionales e incondicionales.
           <p></p>
           <h6 class="fw-bold fs-5">
             Saltos Incondicionales:
           </h6>
-          <P class="texto fw-bold justificado fs-5">Los saltos incondicionales se utilizan mediante la instrucción JMP, la cual transfiere el control a la línea especificada después de la palabra JMP, la cual puede ser un valor directo o una etiqueta.</P>
-          <P class="texto fw-bold justificado fs-5">También se puede contar como un salto incondicional la instrucción CALL, la cual llama una procedimiento y al terminarla devuelve el control a la línea siguiente de donde se inicio la llamada a procedimiento.</P>
+          <P class="texto fw-bold justificado fs-5">Los saltos incondicionales se utilizan mediante la instrucción JMP,
+            la cual transfiere el control a la línea especificada después de la palabra JMP, la cual puede ser un valor
+            directo o una etiqueta.</P>
+          <P class="texto fw-bold justificado fs-5">También se puede contar como un salto incondicional la instrucción
+            CALL, la cual llama una procedimiento y al terminarla devuelve el control a la línea siguiente de donde se
+            inicio la llamada a procedimiento.</P>
           <h6 class="fw-bold fs-5">
             Saltos Condicionales:
           </h6>
-          <P class="texto fw-bold justificado fs-5">Los saltos condicionales transfieren el control del programa a la ubicación que se les dé como parámetro si al hacer una comparación se cumple la condición establecida en el salto, los saltos condicionales son los siguientes:</P>
+          <P class="texto fw-bold justificado fs-5">Los saltos condicionales transfieren el control del programa a la
+            ubicación que se les dé como parámetro si al hacer una comparación se cumple la condición establecida en el
+            salto, los saltos condicionales son los siguientes:</P>
           <h6 class="fw-bold fs-5">
             JA (Jump if Above):
           </h6>
-          <P class="texto fw-bold justificado">Salta cuando el valor es superior, su condición es equivalente al salto JNBE (Jump if Not Below or Equal).</P>
+          <P class="texto fw-bold justificado">Salta cuando el valor es superior, su condición es equivalente al salto
+            JNBE (Jump if Not Below or Equal).</P>
           <h6 class="fw-bold">
             JAE (Jump if Above or Equal):
           </h6>
-          <P class="texto fw-bold justificado fs-5">Salta cuando el valor es superior o igual, su condición es equivalente al salto JNB (Jump if Not Below).</P>
+          <P class="texto fw-bold justificado fs-5">Salta cuando el valor es superior o igual, su condición es
+            equivalente al salto JNB (Jump if Not Below).</P>
           <h6 class="fw-bold fs-5">
             JB (Jump if Below):
           </h6>
-          <P class="texto fw-bold justificado fs-5">Salta cuando el valor es menor, su condición es equivalente al salto JNAE (Jump if Not Above or Equal).</P>
+          <P class="texto fw-bold justificado fs-5">Salta cuando el valor es menor, su condición es equivalente al salto
+            JNAE (Jump if Not Above or Equal).</P>
           <h6 class="fw-bold fs-5">
             JBE (Jump if Below or Equal):
           </h6>
-          <P class="texto fw-bold justificado fs-5">Salta cuando el valor es menor o igual, su condición es equivalente al salto JNA (Jump if Not Above).</P>
+          <P class="texto fw-bold justificado fs-5">Salta cuando el valor es menor o igual, su condición es equivalente
+            al salto JNA (Jump if Not Above).</P>
           <h6 class="fw-bold fs-5">
             JE (Jump if Equal):
           </h6>
@@ -228,19 +256,23 @@
           <h6 class="fw-bold fs-5">
             JG (Jump if Greater):
           </h6>
-          <P class="texto fw-bold justificado fs-5">Salta cuando el valor es mayor, su condición es equivalente al salto JNLE (Jump if Not Less or Equal).</P>
+          <P class="texto fw-bold justificado fs-5">Salta cuando el valor es mayor, su condición es equivalente al salto
+            JNLE (Jump if Not Less or Equal).</P>
           <h6 class="fw-bold fs-5">
             JGE (Jump if Greater or Equal):
           </h6>
-          <P class="texto fw-bold justificado fs-5">Salta cuando el valor es mayor o igual, su condición es equivalente al salto JNL (Jump if Not Less).</P>
+          <P class="texto fw-bold justificado fs-5">Salta cuando el valor es mayor o igual, su condición es equivalente
+            al salto JNL (Jump if Not Less).</P>
           <h6 class="fw-bold fs-5">
             JL (Jump if Less):
           </h6>
-          <P class="texto fw-bold justificado fs-5">Salta cuando el valor es menor, su condición es equivalente al salto JNGE (Jump if Not Greater or Equal).</P>
+          <P class="texto fw-bold justificado fs-5">Salta cuando el valor es menor, su condición es equivalente al salto
+            JNGE (Jump if Not Greater or Equal).</P>
           <h6 class="fw-bold fs-5">
             JLE (Jump if Less or Equal):
           </h6>
-          <P class="texto fw-bold justificado fs-5">Salta cuando el valor es menor o igual, su condición es equivalente al salto JNG (Jump if Not Greater).</p>
+          <P class="texto fw-bold justificado fs-5">Salta cuando el valor es menor o igual, su condición es equivalente
+            al salto JNG (Jump if Not Greater).</p>
 
 
         </div>
@@ -258,8 +290,13 @@
       <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
         data-mdb-parent="#accordionFlushExample">
         <div class="accordion-body texto fw-bold justificado fs-5">
-          Dentro de la programación existen ocasiones en la que es necesario ejecutar una misma instrucción un cierto número de veces, el cual no siempre es conocido por el programador o puede cambiar durante la ejecución del programa, para lo que existen los ciclos condicionales, los cuales una vez se cumpla la condición que tienen establecida, dejaran de ejecutarse como ciclo y permitirán que el programa continúe con su flujo normal.
-          <P class="texto fw-bold justificado fs-5">En ensamblador no existen de forma predefinida estos ciclos, pero pueden crearse haciendo uso de los saltos incondicionales, generando ciclos que se repetirán hasta que se cumpla la condición definida por el programador.</p>
+          Dentro de la programación existen ocasiones en la que es necesario ejecutar una misma instrucción un cierto
+          número de veces, el cual no siempre es conocido por el programador o puede cambiar durante la ejecución del
+          programa, para lo que existen los ciclos condicionales, los cuales una vez se cumpla la condición que tienen
+          establecida, dejaran de ejecutarse como ciclo y permitirán que el programa continúe con su flujo normal.
+          <P class="texto fw-bold justificado fs-5">En ensamblador no existen de forma predefinida estos ciclos, pero
+            pueden crearse haciendo uso de los saltos incondicionales, generando ciclos que se repetirán hasta que se
+            cumpla la condición definida por el programador.</p>
         </div>
       </div>
     </div>
@@ -275,12 +312,14 @@
       <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
         data-mdb-parent="#accordionFlushExample">
         <div class="accordion-body texto fw-bold justificado fs-5">
-          En ensamblador existen dos instrucciones que cumplen con el propósito de aumentar o reducir el valor contenido dentro de un registro.
+          En ensamblador existen dos instrucciones que cumplen con el propósito de aumentar o reducir el valor contenido
+          dentro de un registro.
           <p></p>
           <h6 class="fw-bold fs-5">
             INC:
           </h6>
-          <P class="texto fw-bold justificado fs-5">Incrementa en uno el valor contenido dentro del registro que se le dé como
+          <P class="texto fw-bold justificado fs-5">Incrementa en uno el valor contenido dentro del registro que se le
+            dé como
             parámetro.
           </p>
           <h6 class="fw-bold fs-5">
@@ -290,13 +329,14 @@
           <h6 class="fw-bold fs-5">
             DEC:
           </h6>
-          <P class="texto fw-bold justificado fs-5">Reduce en uno el valor contenido dentro del registro que se le dé como parámetro.
+          <P class="texto fw-bold justificado fs-5">Reduce en uno el valor contenido dentro del registro que se le dé
+            como parámetro.
           </p>
           <h6 class="fw-bold fs-5">
             DEC al:
           </h6>
           <P class="texto fw-bold justificado fs-5">Reduce en 1 el valor del registro al.</p>
-          </div>
+        </div>
       </div>
     </div>
 
@@ -311,7 +351,8 @@
       <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
         data-mdb-parent="#accordionFlushExample">
         <div class="accordion-body texto fw-bold justificado fs-5">
-          El capturar cadenas con formato permite el movimiento, comparación o búsqueda rápida entre bloques de datos, las instrucciones son las siguientes:
+          El capturar cadenas con formato permite el movimiento, comparación o búsqueda rápida entre bloques de datos,
+          las instrucciones son las siguientes:
           <p></p>
           <h6 class="fw-bold fs-5">
             MOVC:
@@ -330,7 +371,8 @@
           <h6 class="fw-bold fs-5">
             CMPW:
           </h6>
-          <P class="texto fw-bold justificado fs-5">Esta instrucción es utilizada para comparar una palabra de una cadena.</p>
+          <P class="texto fw-bold justificado fs-5">Esta instrucción es utilizada para comparar una palabra de una
+            cadena.</p>
           <h6 class="fw-bold fs-5">
             SCAC:
           </h6>
@@ -338,7 +380,8 @@
           <h6 class="fw-bold fs-5">
             SCAW:
           </h6>
-          <P class="texto fw-bold justificado fs-5">Esta instrucción se utiliza para buscar una palabra de una cadena.</p>
+          <P class="texto fw-bold justificado fs-5">Esta instrucción se utiliza para buscar una palabra de una cadena.
+          </p>
           <h6 class="fw-bold fs-5">
             LODC:
           </h6>
@@ -346,7 +389,8 @@
           <h6 class="fw-bold fs-5">
             LODW:
           </h6>
-          <P class="texto fw-bold justificado fs-5">Esta instrucción es utilizada para cargar una palabra de una cadena.</p>
+          <P class="texto fw-bold justificado fs-5">Esta instrucción es utilizada para cargar una palabra de una cadena.
+          </p>
           <h6 class="fw-bold fs-5">
             STOC:
           </h6>
@@ -354,7 +398,8 @@
           <h6 class="fw-bold fs-5">
             STOW:
           </h6>
-          <P class="texto fw-bold justificado fs-5">Esta instrucción es utilizada para guardar  una palabra de una cadena.</p>
+          <P class="texto fw-bold justificado fs-5">Esta instrucción es utilizada para guardar una palabra de una
+            cadena.</p>
         </div>
       </div>
     </div>
@@ -370,21 +415,28 @@
       <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight"
         data-mdb-parent="#accordionFlushExample">
         <div class="accordion-body texto fw-bold justificado fs-5">
-          Dentro de ensamblador se pueden llevar a cabo las 4 instrucciones aritméticas básicas, cada una de ellas cuenta con su propia función:
+          Dentro de ensamblador se pueden llevar a cabo las 4 instrucciones aritméticas básicas, cada una de ellas
+          cuenta con su propia función:
           <p></p>
           <h6 class="fw-bold fs-5">
             Instrucción de Suma ADD:
           </h6>
-          <P class="texto fw-bold justificado fs-5">Suma los operandos que se le dan y guarda el resultado en el primer operando.</p>
+          <P class="texto fw-bold justificado fs-5">Suma los operandos que se le dan y guarda el resultado en el primer
+            operando.</p>
           <h6 class="fw-bold fs-5">
             Instrucción de multiplicación MUL
           </h6>
-          <P class="texto fw-bold justificado fs-5">Multiplica el contenido del acumulador por el operando, a diferencia de los métodos anteriores, solo es necesario indicar el valor por el que se multiplicará, ya que el resultado siempre es almacenado en el registro AX.</p>
+          <P class="texto fw-bold justificado fs-5">Multiplica el contenido del acumulador por el operando, a diferencia
+            de los métodos anteriores, solo es necesario indicar el valor por el que se multiplicará, ya que el
+            resultado siempre es almacenado en el registro AX.</p>
           <h6 class="fw-bold fs-5">
             Instrucción de división DIV:
           </h6>
-          <P class="texto fw-bold justificado fs-5">Divide un numero contenido en el acumulador entre el operando fuente, el cociente se guarda en AL o AX y el resto en AH o DX según el operando sea byte o palabra respectivamente. Es necesario que DX o AH sean cero antes de la operación por lo que es necesario utilizar el ajuste de división antes del la instrucción DIV.</p>
-         
+          <P class="texto fw-bold justificado fs-5">Divide un numero contenido en el acumulador entre el operando
+            fuente, el cociente se guarda en AL o AX y el resto en AH o DX según el operando sea byte o palabra
+            respectivamente. Es necesario que DX o AH sean cero antes de la operación por lo que es necesario utilizar
+            el ajuste de división antes del la instrucción DIV.</p>
+
         </div>
       </div>
     </div>
@@ -400,25 +452,26 @@
         data-mdb-parent="#accordionFlushExample">
         <div class="accordion-body texto fw-bold justificado fs-5">
           En este modo, los datos son proporcionados directamente como parte de la instrucción.
-         <p class="texto fw-bold justificado fs-5">Ejemplo</p>
+          <p class="texto fw-bold justificado fs-5">Ejemplo</p>
           <P class="texto fw-bold justificado fs-5">Mov AX,34h ;</p>
           <P class="texto fw-bold justificado fs-5">Copia en AX el número 34h hexadecimal Mov CX,10 ;</p>
           <P class="texto fw-bold justificado fs-5">Copia en CX el número 10 en decimal</p>
           <P class="texto fw-bold justificado fs-5">.COMMENT</p>
           <P class="texto fw-bold justificado fs-5">Programa: PushPop.ASM</p>
-          <P class="texto fw-bold justificado fs-5">Descripción: Este programa demuestra el uso de las instrucciones para el manejo de la pila, implementando la instrucción XCHG con Push y Pop</p>
+          <P class="texto fw-bold justificado fs-5">Descripción: Este programa demuestra el uso de las instrucciones
+            para el manejo de la pila, implementando la instrucción XCHG con Push y Pop</p>
           <P class="texto fw-bold justificado fs-5">MODEL tiny</p>
-            <P class="texto fw-bold justificado fs-5">.CODE</p>
-              <P class="texto fw-bold justificado fs-5">Inicio: ;Punto de entrada al programa</p>
-            <P class="texto fw-bold justificado fs-5">Mov AX,5 ;AX=5</p>
-            <P class="texto fw-bold justificado fs-5">Mov BX,10 ;BX=10</p>
-            <P class="texto fw-bold justificado fs-5">Push AX ;Pila=5E</p>
-            <P class="texto fw-bold justificado fs-5">Mov AX,BX ;AX=10</p>
-            <P class="texto fw-bold justificado fs-5">Pop BX ;BX=5</p>
-            <P class="texto fw-bold justificado fs-5">Mov AX,4C00h ;Terminar programa y salir al DOS</p>
-            <P class="texto fw-bold justificado fs-5">Int 21h ;</p>
-            <P class="texto fw-bold justificado fs-5">END Inicio</p>
-            <P class="texto fw-bold justificado fs-5">END</p>
+          <P class="texto fw-bold justificado fs-5">.CODE</p>
+          <P class="texto fw-bold justificado fs-5">Inicio: ;Punto de entrada al programa</p>
+          <P class="texto fw-bold justificado fs-5">Mov AX,5 ;AX=5</p>
+          <P class="texto fw-bold justificado fs-5">Mov BX,10 ;BX=10</p>
+          <P class="texto fw-bold justificado fs-5">Push AX ;Pila=5E</p>
+          <P class="texto fw-bold justificado fs-5">Mov AX,BX ;AX=10</p>
+          <P class="texto fw-bold justificado fs-5">Pop BX ;BX=5</p>
+          <P class="texto fw-bold justificado fs-5">Mov AX,4C00h ;Terminar programa y salir al DOS</p>
+          <P class="texto fw-bold justificado fs-5">Int 21h ;</p>
+          <P class="texto fw-bold justificado fs-5">END Inicio</p>
+          <P class="texto fw-bold justificado fs-5">END</p>
 
         </div>
       </div>
@@ -440,21 +493,25 @@
           <h6 class="fw-bold fs-5">
             NOT:
           </h6>
-          <P class="texto fw-bold justificado fs-5">La instrucción NOT o negación requiere un solo operando y su función es cambiar
+          <P class="texto fw-bold justificado fs-5">La instrucción NOT o negación requiere un solo operando y su función
+            es cambiar
             el estado de los bits del mismo, es decir, cambiar los ceros por unos y los unos por ceros.</p>
           <h6 class="fw-bold fs-5">
             AND:
           </h6>
-          <P class="texto fw-bold justificado fs-5">Esta instrucción también conocida como producto lógico requiere de dos
+          <P class="texto fw-bold justificado fs-5">Esta instrucción también conocida como producto lógico requiere de
+            dos
             operandos y su valor será igual a uno cuando los bits que se comparen ambos sean uno.</p>
           <h6 class="fw-bold fs-5">
             OR:
           </h6>
-          <P class="texto fw-bold justificado fs-5">La instrucción OR también conocida como suma lógica requiere de dos operandos y su valor será uno si alguno de los bits que compara es uno.</p>
+          <P class="texto fw-bold justificado fs-5">La instrucción OR también conocida como suma lógica requiere de dos
+            operandos y su valor será uno si alguno de los bits que compara es uno.</p>
           <h6 class="fw-bold fs-5">
             XOR:
           </h6>
-          <P class="texto fw-bold justificado fs-5">La instrucción XOR o suma lógica exclusiva requiere dos operandos, los cuales se comparan y el resultado obtenido es uno cuando uno de los bits es uno y el otro cero.</p>
+          <P class="texto fw-bold justificado fs-5">La instrucción XOR o suma lógica exclusiva requiere dos operandos,
+            los cuales se comparan y el resultado obtenido es uno cuando uno de los bits es uno y el otro cero.</p>
         </div>
       </div>
     </div>
@@ -470,8 +527,12 @@
       <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen"
         data-mdb-parent="#accordionFlushExample">
         <div class="accordion-body texto fw-bold justificado fs-5">
-          Las variables numéricas son muy útiles en ensamblador de la misma forma que en otros lenguajes de programación, ya que permiten al programador hacer operaciones aritméticas con datos que se desconocen al momento de la compilación.
-          <P class="texto fw-bold justificado fs-5">La utilización de datos numéricos es similar a la de cadenas, con la diferencia de que en vez de declarar las variables como db, se declaran como dw, lo cual significa que son variables numéricas.</P>
+          Las variables numéricas son muy útiles en ensamblador de la misma forma que en otros lenguajes de
+          programación, ya que permiten al programador hacer operaciones aritméticas con datos que se desconocen al
+          momento de la compilación.
+          <P class="texto fw-bold justificado fs-5">La utilización de datos numéricos es similar a la de cadenas, con la
+            diferencia de que en vez de declarar las variables como db, se declaran como dw, lo cual significa que son
+            variables numéricas.</P>
         </div>
       </div>
     </div>
@@ -488,90 +549,104 @@
         data-mdb-parent="#accordionFlushExample">
         <div class="accordion-body texto fw-bold justificado fs-5">
           Un archivo está identificado por un nombre y contiene datos en formato binario.
-          <P class="texto fw-bold justificado fs-5">En lenguajes de alto nivel existen funciones especializadas que permiten el
-            manejo de archivos de forma directa, con instrucciones como crear, leer o escribir archivo. En ensamblador el
+          <P class="texto fw-bold justificado fs-5">En lenguajes de alto nivel existen funciones especializadas que
+            permiten el
+            manejo de archivos de forma directa, con instrucciones como crear, leer o escribir archivo. En ensamblador
+            el
             manipular un archivo es más complejo pero también es posible.</P>
-          <P class="texto fw-bold justificado fs-5">Hay dos formas diferentes de utilizar archivos en ensamblador, la primera y más
+          <P class="texto fw-bold justificado fs-5">Hay dos formas diferentes de utilizar archivos en ensamblador, la
+            primera y más
             antigua es mediante bloques de control de archivo o FCB por sus siglas en inglés.</p>
           <h6 class="fw-bold fs-5">
             FCB (File Control Block):
           </h6>
-          <P class="texto fw-bold justificado fs-5">Permite tener un gran número de archivos abiertos y crear volúmenes en
+          <P class="texto fw-bold justificado fs-5">Permite tener un gran número de archivos abiertos y crear volúmenes
+            en
             dispositivos de almacenamiento.</p>
-            <P class="texto fw-bold justificado fs-5">El manejo de archivos con FCB utiliza el servicio 0FH de la instrucción 21h
-              para abrir un archivo.</p>
-            <h6 class="fw-bold fs-5">
-              Handles:
-            </h6>
-            <P class="texto fw-bold justificado fs-5">Permite un manejo de errores más simple, utiliza la estructura de directorio
-              del sistema operativo y es más sencillo para el programador.</p>
-            <P class="texto fw-bold justificado fs-5">El manejo de archivos por Handles utiliza 3 servicios principales para ello:
-            </P>
-            <h6 class="fw-bold fs-5">
-              3CH:
-            </h6>
-            <P class="texto fw-bold justificado fs-5">Crea un nuevo archivo.</p>
-            <h6 class="fw-bold fs-5">
-              40H:
-            </h6>
-            <P class="texto fw-bold justificado fs-5">Escribe sobre un archivo existente.</p>
-            <h6 class="fw-bold fs-5">
-              3EH:
-            </h6>
-            <P class="texto fw-bold justificado fs-5">Cierra un archivo que se encuentre abierto.</p>
+          <P class="texto fw-bold justificado fs-5">El manejo de archivos con FCB utiliza el servicio 0FH de la
+            instrucción 21h
+            para abrir un archivo.</p>
+          <h6 class="fw-bold fs-5">
+            Handles:
+          </h6>
+          <P class="texto fw-bold justificado fs-5">Permite un manejo de errores más simple, utiliza la estructura de
+            directorio
+            del sistema operativo y es más sencillo para el programador.</p>
+          <P class="texto fw-bold justificado fs-5">El manejo de archivos por Handles utiliza 3 servicios principales
+            para ello:
+          </P>
+          <h6 class="fw-bold fs-5">
+            3CH:
+          </h6>
+          <P class="texto fw-bold justificado fs-5">Crea un nuevo archivo.</p>
+          <h6 class="fw-bold fs-5">
+            40H:
+          </h6>
+          <P class="texto fw-bold justificado fs-5">Escribe sobre un archivo existente.</p>
+          <h6 class="fw-bold fs-5">
+            3EH:
+          </h6>
+          <P class="texto fw-bold justificado fs-5">Cierra un archivo que se encuentre abierto.</p>
         </div>
       </div>
     </div>
-
-    
-
   </div>
+  <script>
+    const btn_scrolltop = document.getElementById("btn_scrolltop")
+    btn_scrolltop.addEventListener('click', () => {
+      window.scrollTo(0, 0)
+    })
+
+    window.onscroll = () => {
+      add_btn_scrolltop()
+    }
+
+    const add_btn_scrolltop = () => {
+      if (window.scrollY < 300) {
+        btn_scrolltop.classList.remove("btn-scrolltop-on")
+      } else {
+        btn_scrolltop.classList.add("btn-scrolltop-on")
+      }
+    }
+  </script>
+
   <!-- fin de accordion -->
-
-
-
-
-
-  
   <!--:::footer::::::-->
   <footer class="pie-pagina">
     <div class="grupo-1">
-        <div class="box">
-            <figure>
-                <a target="_blank" >
-                    <img src="imagenes/plastico.png" alt="Lenguaje de interfaz">
-                </a>
-            </figure>
+      <div class="box">
+        <figure>
+          <a target="_blank">
+            <img src="imagenes/plastico.png" alt="Lenguaje de interfaz">
+          </a>
+        </figure>
+      </div>
+      <div class="box">
+        <h2 class="letras_titulo">DESARROLLADORES</h2>
+        <p class="texnav">"Si queremos contar línea de código, no deberíamos referirnos a ellas como líneas
+          producidas, sino como líneas consumidas" (Edsger Dijkastra).</p>
+        <p class="texnav">Alumna: Yolanda Galindo Martinez</p>
+        <p class="texnav">Alumno: Jalil Garcia jeronimo</p>
+      </div>
+      <div class="box">
+        <h2 class="letras_titulo">CONSULTAS</h2>
+        <div class="red-social">
+          <a target="_blank" href="https://www.facebook.com/extension.iliatenco" class="fa fa-facebook"></a>
+          <a target="_blank" href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="fa fa-envelope"></a>
+          <img class="my-3" src="imagenes/LOGO_TECNM_BLANCO.png" alt="" width="300" height="100">
         </div>
-        <div class="box">
-            <h2 class="letras_titulo">DESARROLLADORES</h2>
-            <p class="texnav">"Si queremos contar línea de código, no deberíamos referirnos a ellas como líneas
-                producidas, sino como líneas consumidas" (Edsger Dijkastra).</p>
-            <p class="texnav">Alumna: Yolanda Galindo Martinez</p>
-            <p class="texnav">Alumno: Jalil Garcia jeronimo</p>
-        </div>
-        <div class="box">
-            <h2 class="letras_titulo">CONSULTAS</h2>
-            <div class="red-social">
-                <a target="_blank" href="https://www.facebook.com/extension.iliatenco" 
-                    class="fa fa-facebook"></a>
-                <a target="_blank" href="https://github.com/yola3/yola3.github.io" class="fa fa-github"></a>
-                
-               
-                <img class="my-3" src="imagenes/LOGO_TECNM_BLANCO.png" alt="" width="300" height="100" >
-            </div>
-        </div>
+      </div>
     </div>
     <div class="grupo-2">
-        <small>&copy; 2020 Copyright: <a class="text-white" target="_blank"
-                href="https://mdbootstrap.com/">MDBootstrap.com</a>
-    </div> </small>
+      <small>&copy; Creative <a class="text-white" target="_blank" href="">Commons</a>
+     </small>
     </div>
-</footer>
-<!--:::final footer::::::-->
+  
+  </footer>
+  <!--:::final footer::::::-->
 
 </body>
+
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
 
 </html>
-

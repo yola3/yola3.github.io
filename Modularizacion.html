@@ -21,13 +21,15 @@
     </title>
     <link rel="shortcut icon" href="imagenes/cubo.png">
 </head>
+
 <body>
-    
+
     <!-- inicio de navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light   fixed-top" style="background-color:#00325f ;" >
+    <nav class="navbar navbar-expand-lg navbar-light   fixed-top" style="background-color:#00325f ;">
         <div class="container ">
             <img src="imagenes/tecilia.png" alt="" width="50" height="40">
-            <a class="navbar-brand fw-bold text-white mx-2 texnav fs-5" href="Inicio.html">Lenguaje de interfaz</a>
+            <a class="navbar-brand fw-bold text-white mx-2 texnav fs-5" href="Inicio.html">Extensión académica
+                Iliatenco</a>
             <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-bars"></i>
@@ -35,7 +37,8 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-auto text-center mb-2 mb-lg-0 fw-bold">
                     <li class="nav-item ">
-                        <a class="nav-link  text-white texnav fs-5" aria-current="page" href="Inicio.html">Introducción</a>
+                        <a class="nav-link  text-white texnav fs-5" aria-current="page"
+                            href="Inicio.html">Introducción</a>
                     </li>
                     <li class="nav-item ">
                         <a class="nav-link text-white texnav fs-5" href="conceptos.html">Conceptos</a>
@@ -46,128 +49,153 @@
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active text-white texnav fs-5" href="Modularizacion.html">Modularización</a>
-                        
+
                     </li>
                 </ul>
             </div>
         </div>
-        
+
     </nav>
     <!-- final de navbar -->
     <br><br><br>
     <div class="container">
         <h2 class="letras_titulo fw-bold text-center">¿Qué es la modularización?</h2>
-        <h4 class="texto fw-bold justificado">Es uno de los métodos de diseño más flexibles y poderosos para el mejoramiento de la productividad de un programa.</h4>
-<br>
-         <!-- inicio de card -->
-         <div class="cont container text-center ">
-         <div class="row  row-cols-1 row-cols-md-2 g-4">
-            <div class="col-sm-6 ">
-              <div class="card border-start border-primary border-5 bg-light bg-opacity-25" >
-                <div class="card-body ">
-                  <h3 class="card-title letras_titulo">Procedimientos</h3>
-                  <p class="card-text texto fs-5 fw-bold justificado"> Los procedimientos son un conjunto de instrucciones que se pueden ejecutar desde muchos
-                    lugares diferentes de un programa, en vez de tener que repetir muchas veces el mismo
-                    conjunto de instrucciones cada vez que se necesitan.
-                   </p>
-                    
-                  
-                </div>
-              </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card border-start border-primary border-5 bg-light bg-opacity-25">
-                <div class="card-body">
-                  <h3 class="card-title letras_titulo">Macros</h3>
-                  <p class="card-text texto fs-5 fw-bold justificado">Una macro es un conjunto de instrucciones que pueden ser llamadas utilizando su nombre para ejecutarse dentro de un programa, estas solo se escriben una vez dentro del código y pueden utilizarse las veces que sea necesario.</p>
-                 
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-<!-- fin de card -->
-<br><br>
- <div class="container">
-    <h2 class="letras_titulo fw-bold text-center ">Código en leguaje ensamblador de procedimientos y macros.</h2><br><br>
-    <div class="cont container text-center">
-        <div class="card bg-light border-top border-3 border-bottom border-primary">
-            <figure>
-                <img src="">
-            </figure>
-            <div class="contenido container">
-                <h3 class="fw-bold letras_titulo">Ejemplo de procedimientos</h3>
-                <p class="texto justificado fs-5">Este programa utiliza el procedimiento, para invocarlo se utiliza la instruccion CALL que guarda en la pila el valor actual del registro. El siguiente ejemplo de procedimientos nos pide dos numeros y lo devuelve diciendo el valor que tiene los numeros insertados</p>
-                <script  src="https://gist.github.com/yola3/10ea2c73d0d5a5132610b657502983bc.js"></script>
-    
-            </div>
-        </div>
-    </div>
-    <!-- final de card -->
-</div>
-<br><br>
- <!-- fin de card -->
- <div class="container">
-    <div class="cont container text-center">
-        <div class="card bg-light border-top border-3 border-bottom border-primary">
-            <figure>
-                <img src="">
-            </figure>
-            <div class="contenido container">
-                <h3 class="fw-bold letras_titulo">Ejemplo de macros</h3>
-                <p class="texto justificado fs-5">Es necesario definir un nombre  específico para la macro, junto con el conjunto de instrucciones en ensamblador que la macro va a generar. Después, siempre que necesite codificar el conjunto de instrucciones, solo se codifica el nombre de la macro y el ensamblador genera de manera  automática las instrucciones que se  definió. En este caso se definió cuatro macros (limpiar, posición de la cadena, imprimir y pausar). </p>
+        <h4 class="texto fw-bold justificado">Es uno de los métodos de diseño más flexibles y poderosos para el
+            mejoramiento de la productividad de un programa.</h4>
+        <br>
+        <!-- inicio de card -->
+        <div class="cont container text-center ">
+            <div class="row  row-cols-1 row-cols-md-2 g-4">
+                <div class="col-sm-6 ">
+                    <div class="card border-start border-primary border-5 bg-light bg-opacity-25">
+                        <div class="card-body ">
+                            <h3 class="card-title letras_titulo">Procedimientos</h3>
+                            <p class="card-text texto fs-5 fw-bold justificado"> Los procedimientos son un conjunto de
+                                instrucciones que se pueden ejecutar desde muchos
+                                lugares diferentes de un programa, en vez de tener que repetir muchas veces el mismo
+                                conjunto de instrucciones cada vez que se necesitan.
+                            </p>
 
-                <script src="https://gist.github.com/yola3/665029fc487ad2622c353a7f73425ba5.js"></script>
-    
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card border-start border-primary border-5 bg-light bg-opacity-25">
+                        <div class="card-body">
+                            <h3 class="card-title letras_titulo">Macros</h3>
+                            <p class="card-text texto fs-5 fw-bold justificado">Una macro es un conjunto de
+                                instrucciones que pueden ser llamadas utilizando su nombre para ejecutarse dentro de un
+                                programa, estas solo se escriben una vez dentro del código y pueden utilizarse las veces
+                                que sea necesario.</p>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- final de card -->
-</div>
+    <!-- fin de card -->
     <br>
+    <div class="container">
+        <h2 class="letras_titulo fw-bold text-center ">Código en leguaje ensamblador de procedimientos y macros.</h2>
+        <br><br>
+        <div class="cont container text-center">
+            <div class="card car bg-light border-top border-3 border-bottom border-primary">
+                <figure>
+                    <img src="">
+                </figure>
+                <div class="contenido container">
+                    <h3 class="fw-bold letras_titulo">Ejemplo de procedimientos</h3>
+                    <p class="texto justificado fs-5">Este programa utiliza el procedimiento, para invocarlo se utiliza
+                        la instruccion CALL que guarda en la pila el valor actual del registro. El siguiente ejemplo de
+                        procedimientos nos pide dos numeros y lo devuelve diciendo el valor que tiene los numeros
+                        insertados</p>
+                    <script src="https://gist.github.com/yola3/10ea2c73d0d5a5132610b657502983bc.js"></script>
 
-
-  <!--:::footer::::::-->
-  <footer class="pie-pagina">
-    <div class="grupo-1">
-        <div class="box">
-            <figure>
-                <a target="_blank" >
-                    <img src="imagenes/plastico.png" alt="Lenguaje de interfaz">
-                </a>
-            </figure>
-        </div>
-        <div class="box">
-            <h2 class="letras_titulo">DESARROLLADORES</h2>
-            <p class="texnav">"Si queremos contar línea de código, no deberíamos referirnos a ellas como líneas
-                producidas, sino como líneas consumidas" (Edsger Dijkastra).</p>
-            <p class="texnav">Alumna: Yolanda Galindo Martinez</p>
-            <p class="texnav">Alumno: Jalil Garcia jeronimo</p>
-        </div>
-        <div class="box">
-            <h2 class="letras_titulo">CONSULTAS</h2>
-            <div class="red-social">
-                <a target="_blank" href="https://www.facebook.com/extension.iliatenco" 
-                    class="fa fa-facebook"></a>
-                <a target="_blank" href="https://github.com/yola3/yola3.github.io" class="fa fa-github"></a>
-                
-               
-                <img class="my-3" src="imagenes/LOGO_TECNM_BLANCO.png" alt="" width="300" height="100" >
+                </div>
             </div>
         </div>
+        <!-- final de card -->
     </div>
-    <div class="grupo-2">
-        <small>&copy; 2020 Copyright: <a class="text-white" target="_blank"
-                href="https://mdbootstrap.com/">MDBootstrap.com</a>
-    </div> </small>
+    <br><br>
+    <!-- fin de card -->
+    <div class="container">
+        <div class="cont container text-center">
+            <div class="card car bg-light border-top border-3 border-bottom border-primary">
+                <figure>
+                    <img src="">
+                </figure>
+                <div class="contenido container">
+                    <h3 class="fw-bold letras_titulo">Ejemplo de macros</h3>
+                    <p class="texto justificado fs-5">Es necesario definir un nombre específico para la macro, junto con
+                        el conjunto de instrucciones en ensamblador que la macro va a generar. Después, siempre que
+                        necesite codificar el conjunto de instrucciones, solo se codifica el nombre de la macro y el
+                        ensamblador genera de manera automática las instrucciones que se definió. En este caso se
+                        definió cuatro macros (limpiar, posición de la cadena, imprimir y pausar). </p>
+
+                    <script src="https://gist.github.com/yola3/665029fc487ad2622c353a7f73425ba5.js"></script>
+
+                </div>
+            </div>
+        </div>
+        <!-- final de card -->
     </div>
-</footer>
-<!--:::final footer::::::-->
-   
-        
+
+    <script>
+        const btn_scrolltop = document.getElementById("btn_scrolltop")
+        btn_scrolltop.addEventListener('click', () => {
+            window.scrollTo(0, 0)
+        })
+
+        window.onscroll = () => {
+            add_btn_scrolltop()
+        }
+
+        const add_btn_scrolltop = () => {
+            if (window.scrollY < 300) {
+                btn_scrolltop.classList.remove("btn-scrolltop-on")
+            } else {
+                btn_scrolltop.classList.add("btn-scrolltop-on")
+            }
+        }
+    </script>
+
+    <br><br>
 
 
+    <!--:::footer::::::-->
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a target="_blank">
+                        <img src="imagenes/plastico.png" alt="Lenguaje de interfaz">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2 class="letras_titulo">DESARROLLADORES</h2>
+                <p class="texnav">"Si queremos contar línea de código, no deberíamos referirnos a ellas como líneas
+                    producidas, sino como líneas consumidas" (Edsger Dijkastra).</p>
+                <p class="texnav">Alumna: Yolanda Galindo Martinez</p>
+                <p class="texnav">Alumno: Jalil Garcia jeronimo</p>
+            </div>
+            <div class="box">
+                <h2 class="letras_titulo">CONSULTAS</h2>
+                <div class="red-social">
+                    <a target="_blank" href="https://www.facebook.com/extension.iliatenco" class="fa fa-facebook"></a>
+                    <a target="_blank" href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="fa fa-envelope"></a>
+
+                    <img class="my-3" src="imagenes/LOGO_TECNM_BLANCO.png" alt="" width="300" height="100">
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; Creative <a class="text-white" target="_blank" href="">Commons</Canvas></a>
+        </div> </small>
+    </footer>
+    <!--:::final footer::::::-->
 </body>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.js"></script>
 

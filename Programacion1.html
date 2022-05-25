@@ -11,9 +11,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.11.0/mdb.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="estilo.css">
     <!--Iconos-->
     <script src="https://kit.fontawesome.com/eb496ab1a0.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="estilo.css">
     <title>
         Programación
     </title>
@@ -51,6 +51,7 @@
     </nav>
     <!-- final de navbar -->
     <br><br><br>
+    <h2 class="display-4 text-center fw-bold text-dark my-3 letras_titulo">Codificación de programación básica</h2>
 <!-- inicio de card -->
 <div class=" cont container text-center">
     <div class="card car bg-light border-top border-3 border-bottom border-primary">
@@ -68,6 +69,7 @@
     </div>
 </div>
 <!-- final de card -->
+<br>
 <!-- inicio de card -->
 <div class="cont container text-center">
     <div class="card car bg-light border-top border-3 border-bottom border-primary">
@@ -86,6 +88,7 @@
     </div>
 </div>
 <!-- final de card -->
+<br>
 <!-- inicio de card -->
 <div class="cont container text-center ">
     <div class="card car bg-light border-top border-3 border-bottom border-primary">
@@ -156,19 +159,39 @@
             <div class="red-social">
                 <a target="_blank" href="https://www.facebook.com/extension.iliatenco" 
                     class="fa fa-facebook"></a>
-                <a target="_blank" href="https://github.com/yola3/yola3.github.io" class="fa fa-github"></a>
-                
+                    <a target="_blank" href="https://accounts.google.com/signin/v2/identifier?continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&service=mail&sacu=1&rip=1&flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="fa fa-envelope"></a>
                
                 <img class="my-3" src="imagenes/LOGO_TECNM_BLANCO.png" alt="" width="300" height="100" >
             </div>
         </div>
     </div>
     <div class="grupo-2">
-        <small>&copy; 2020 Copyright: <a class="text-white" target="_blank"
-                href="https://mdbootstrap.com/">MDBootstrap.com</a>
+        <small>&copy; Creative <a class="text-white" target="_blank"
+                href="">Commons</Canvas></a>
     </div> </small>
     </div>
 </footer>
+<button class="btn-scrolltop" id="btn_scrolltop">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+  <script>
+    const btn_scrolltop = document.getElementById("btn_scrolltop")
+      btn_scrolltop.addEventListener('click', () => {
+        window.scrollTo(0, 0)
+      })
+
+    window.onscroll = () => {
+      add_btn_scrolltop()
+    }
+
+    const add_btn_scrolltop = () => {
+      if (window.scrollY < 300) {
+        btn_scrolltop.classList.remove("btn-scrolltop-on")
+      } else {
+        btn_scrolltop.classList.add("btn-scrolltop-on")
+      }
+    }
+    </script>
 <!--:::final footer::::::-->
 
 
